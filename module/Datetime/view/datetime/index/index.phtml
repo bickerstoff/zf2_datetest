@@ -1,0 +1,23 @@
+<strong>Module:</strong>        Datetime &raquo;
+<strong>Controller:</strong>    Index &raquo;
+<strong>Action:</strong>        index
+
+<?php
+$title = 'Submit a volunteer opportunity';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('datetime', array('action' => 'index')));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+
+echo $this->formrow($form->get('appointment-date'));
+
+echo '<br>';
+echo $this->formsubmit($form->get('submit'));
+
+echo $this->form()->closeTag();
