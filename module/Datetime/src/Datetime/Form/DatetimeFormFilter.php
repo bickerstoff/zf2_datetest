@@ -34,7 +34,7 @@ class DatetimeFormFilter implements InputFilterAwareInterface
 			
 			
 			$inputFilter->add($factory->createInput(array(
-				'name'     => 'date_of_onetime_event',
+				'name'     => 'appointment-date',
 				'required' => false,
 				'filters'  => array(
 					array('name' => 'StripTags'),
