@@ -20,9 +20,9 @@ class DatetimeForm extends Form
 		             'format' => 'Y-m-d'
 		     ),
 		     'attributes' => array(
-		             'min' => '2012-01-01',
+		             'min' => date('Y-m-d'), // today's date
 		             'max' => '2020-01-01',
-		             'step' => '1', // days; default step interval is 1 day
+		             'step' => '2', // days; default step interval is 1 day
 		     )
 		 ));
 		

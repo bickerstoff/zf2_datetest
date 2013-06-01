@@ -32,7 +32,7 @@ class IndexController extends AbstractActionController
 			
 			if ($form->isValid()) 
 			{
-				return $this->redirect()->toRoute('index',array('action' => 'confirmation'));	
+				var_dump('confirmation');
 			}
 
 		}

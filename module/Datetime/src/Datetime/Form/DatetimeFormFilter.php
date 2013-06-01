@@ -39,18 +39,18 @@ class DatetimeFormFilter implements InputFilterAwareInterface
 				'filters'  => array(
 					array('name' => 'StripTags'),
 				),
-				/*'validators' => array(
+				'validators' => array(
 					array(
 						'name' => 'DateStep',
 						'options' => array(
-							'step' 	 => new DateInterval("P2D"),
-							'baseValue' => new DateTime(),
+							//'step' 	 => new DateInterval("P2D"),
+							//'baseValue' => new DateTime(),
 				    		'messages' => array(
 				    				\Zend\Validator\DateStep::NOT_STEP => 'Must be a day in the future',
 				    		),
 						),
 					),
-				),*/
+				),
 			)));
 			
 			
