@@ -10,6 +10,8 @@ class DatetimeForm extends Form
 		// we want to ignore the name passed
 		parent::__construct('datetime');
 		
+		//$this->setPreferFormInputFilter(true);
+		
 		$this->setAttribute('method', 'post');
 		
 		$this->add(array(
@@ -22,7 +24,7 @@ class DatetimeForm extends Form
 		     'attributes' => array(
 		             'min' => date('Y-m-d'), // today's date
 		             'max' => '2020-01-01',
-		             'step' => '2', // days; default step interval is 1 day
+		             'step' => '1', // days; default step interval is 1 day
 		     )
 		 ));
 		
