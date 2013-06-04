@@ -10,7 +10,7 @@ class DatetimeForm extends Form
 		// we want to ignore the name passed
 		parent::__construct('datetime');
 		
-		//$this->setPreferFormInputFilter(true);
+		$this->setPreferFormInputFilter(true);
 		
 		$this->setAttribute('method', 'post');
 		

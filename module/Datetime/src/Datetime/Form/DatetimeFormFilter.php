@@ -33,7 +33,7 @@ class DatetimeFormFilter implements InputFilterAwareInterface
 			$factory     = new InputFactory();
 			
 			
-			/*$inputFilter->add($factory->createInput(array(
+			$inputFilter->add($factory->createInput(array(
 				'name'     => 'appointment-date',
 				'required' => false,
 				'filters'  => array(
@@ -43,15 +43,16 @@ class DatetimeFormFilter implements InputFilterAwareInterface
 					array(
 						'name' => 'DateStep',
 						'options' => array(
-							//'step' 	 => new DateInterval("P3D"),
-							//'baseValue' => new DateTime(),
+							'step' 	 => new DateInterval("P2D"),
+							'baseValue' => new DateTime(),
+						    'format' => 'Y-m-d',
 				    		'messages' => array(
 				    				\Zend\Validator\DateStep::NOT_STEP => 'Must be a day in the future',
 				    		),
 						),
 					),
 				),
-			)));*/
+			)));
 			
 			
 		$this->inputFilter = $inputFilter;
